@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Dice Game</h1>
+        <div class="game-area">
+            <div class="player-area">
+                <h2>Player</h2>
+                <img src="images/dice1.jpg" alt="Dice" id="player-dice1">
+                <img src="images/dice1.jpg" alt="Dice" id="player-dice2">
+                <p>Current Roll: <span id="player-current-roll">0</span></p>
+                <p>Total Score: <span id="player-total-score">0</span></p>
+            </div>
+            <div class="computer-area">
+                <h2>Computer</h2>
+                <img src="images/dice1.jpg" alt="Dice" id="computer-dice1">
+                <img src="images/dice1.jpg" alt="Dice" id="computer-dice2">
+                <p>Current Roll: <span id="computer-current-roll">0</span></p>
+                <p>Total Score: <span id="computer-total-score">0</span></p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="roll-button">Roll Dice</button>
+            <button id="reset-button">Reset Game</button>
+        </div>
+        <p id="message"></p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

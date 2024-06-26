@@ -39,5 +39,43 @@ $(document).ready(function () {
         updateDiceImages(1, 1, 'computer');
     }
 
-    $('#roll-button')
+    $('#roll-button').click(function () {
+        if (rolls < 3) {
+            let playerDice1 = rollDice();
+            let playerDice2 = rollDice();
+            let computerDice1 = rollDice();
+            let computerDice2 = rollDice();
+
+            let playerScore = calculateScore(playerDice1, playerDice2);
+            let computerScore = calculateScore(computerDice1, computerDice2);
+
+            playerTotalScore += playerScore;
+            computerTotalScore += computerScore;
+
+            $('#player-current-roll').text(playerScore);
+            $('#computer-current-roll').text(computerScore);
+
+            updateDiceImages(playerDice1, playerDice2, 'player');
+            updateDiceImages(computerDice1, computerDice2, 'computer');
+
+            updateScores();
+            rolls++;
+
+            if (rolls === 3) {
+                if (playerTotalScore > computerTotalScore) {
+                    $('#message').text('Player Wins!');
+                } else if (computerTotalScore > playerTotalScore) {
+                    $('#message').text('Computer Wins!');
+                } else {
+                    $('#message').text('It\s a Tie!');
+                }
+            }
+        }
+    });
+
+    $('#reset-button').click(function () {
+        resetGame();
+    });
+
+    resetGame();
 })

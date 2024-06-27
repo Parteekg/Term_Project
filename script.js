@@ -7,7 +7,7 @@ $(document).ready(function () {
         return Math.floor(Math.random() * 6) + 1;
     }
 
-    function computerScore(dice1, dice2) {
+    function calculateScore(dice1, dice2) {
         if (dice1 === 1 || dice2 === 1) {
             return 0;
         }
@@ -22,7 +22,7 @@ $(document).ready(function () {
         $(`#${player}-dice2`).attr('src', `images/dice${dice2}.jpg`);
     }
 
-    function updateScore() {
+    function updateScores() {
         $('#player-total-score').text(playerTotalScore);
         $('#computer-total-score').text(computerTotalScore);
     }
@@ -39,6 +39,7 @@ $(document).ready(function () {
         updateDiceImages(1, 1, 'computer');
     }
 
+    // right here
     $('#roll-button').click(function () {
         if (rolls < 3) {
             let playerDice1 = rollDice();
@@ -67,7 +68,7 @@ $(document).ready(function () {
                 } else if (computerTotalScore > playerTotalScore) {
                     $('#message').text('Computer Wins!');
                 } else {
-                    $('#message').text('It\'s a Tie!');
+                    $('#message').text('It\s a Tie!');
                 }
             }
         }
@@ -78,4 +79,4 @@ $(document).ready(function () {
     });
 
     resetGame();
-})
+});

@@ -39,7 +39,7 @@ img {
 }
 
 button {
-    background-color: #4caf50;
+    background-color: #4CAF50;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -50,7 +50,7 @@ button {
 }
 
 button:hover {
-    background-color: #ff5722;
+    background-color: #FF5722;
 }
 
 #message {

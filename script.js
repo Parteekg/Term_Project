@@ -39,7 +39,7 @@ $(document).ready(function () {
         updateDiceImages(1, 1, 'computer');
     }
 
-    // right here
+
     $('#roll-button').click(function () {
         if (rolls < 3) {
             let playerDice1 = rollDice();

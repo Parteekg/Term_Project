@@ -12,7 +12,7 @@ body {
     background-color: #f0f0f0;
     color: #333;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
 }
 
 .container {
@@ -27,7 +27,7 @@ body {
 .game-area {
     @include flex-center();
     justify-content: space-around;
-    margin: 25px 0;
+    margin: 20px 0;
 
 
     .player-area,
@@ -49,7 +49,7 @@ body {
         background-color: $primary-color;
         color: #fff;
         border: none;
-        padding: 15px 20px;
+        padding: 10px 20px;
         margin: 0 10px;
         border-radius: 5px;
         cursor: pointer;
@@ -62,6 +62,6 @@ body {
 }
 
 #message {
-    font-size: 1.5em;
-    margin-top: 25px;
+    font-size: 1.2em;
+    margin-top: 20px;
 }

@@ -35,15 +35,15 @@ img {
 }
 
 .buttons {
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 button {
     background-color: #4caf50;
     color: #fff;
     border: none;
-    padding: 15px 30px;
-    margin: 0 20px;
+    padding: 10px 20px;
+    margin: 0 10px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -55,5 +55,5 @@ button:hover {
 
 #message {
     font-size: 1.2em;
-    margin-top: 30px;
+    margin-top: 20px;
 }
